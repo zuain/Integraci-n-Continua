@@ -3,7 +3,7 @@ include_once "scriptsfacegmail.php"; // esto incluirá
 ?>
 
 <div class="login-form">
-  <form  id="formlogin" name="formlogin" method="POST">
+  <form  id="formlogin" name="formlogin" method="POST">//Inicio de formulario
     <h4 style="text-align:center;">Iniciar sesión</h4>	
 
     <div class="text-center social-btn">
