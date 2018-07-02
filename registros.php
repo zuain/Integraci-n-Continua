@@ -7,6 +7,7 @@ if(!isset($_SESSION['usuario'])){
 
 require_once 'includes/Autoloap.php';
 $datos = new ControllerFichaHome();
+//prueba php
 
 ?>
 
