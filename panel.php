@@ -24,13 +24,6 @@ if(!isset($_SESSION['usuario'])){
 
     <!-- Estilos -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 
@@ -56,7 +49,7 @@ if(!isset($_SESSION['usuario'])){
             <span class="nombre-usuario">User<span class="caret" style="color:#fff;"></span></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="http://poli.catarco.com/cerrar.php">Salir</a></li>
+            <li><a href="http://poli.catarco.com/cerrar.php">Cerrar sesión</a></li>
           </ul>
         </li>
       </ul>
@@ -65,7 +58,7 @@ if(!isset($_SESSION['usuario'])){
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="collapse-2">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://poli.catarco.com/cerrar.php" style="color:#fff;">Salir</a></li>
+        <li><a href="http://poli.catarco.com/cerrar.php" style="color:#fff;">Cerrar sesión</a></li>
       </ul>
     </div><!-- / .navbar-collapse -->
   </div><!-- /.container -->
@@ -78,11 +71,11 @@ if(!isset($_SESSION['usuario'])){
           <div class="content-opciones">
             <a href="http://poli.catarco.com/registros.php" class="opcion two">
                 <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                <p>Registros</p>
+                <p>Notificaciones Recibidas</p>
             </a>
             <a href="http://poli.catarco.com/sincronizados.php" class="opcion three">
                 <span><i class="fa fa-refresh" aria-hidden="true"></i></span>
-                <p>Sincronizados</p>
+                <p>Notificaciones en proceso</p>
             </a>
           </div>
         </div>
