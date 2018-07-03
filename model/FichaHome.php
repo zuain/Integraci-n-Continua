@@ -1,5 +1,9 @@
 <?php
-	
+/*
+Modelo de las notificaciones, 
+con los atributos y métodos
+magicos para el acceso a datos.
+*/	
 	Class FichaHome{
 		private $id;
 		private $nombre;
