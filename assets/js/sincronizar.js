@@ -53,7 +53,12 @@ function botonSincronizar(){
 		});
  	};
 }
-
+/*En este archivo JS hacemos uso de
+JQ para realizar peticiones HTTP y eliminar las
+notificaciones una vez hayan sido procesadas, 
+usando AJAX
+La función sincronizar es ejecuta al instante se carga el DOM*/
+	
 botonSincronizar();
 
 });
