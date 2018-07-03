@@ -54,6 +54,13 @@ function botonEliminar(){
  	};
 }
 
+/*En este archivo JS hacemos uso de
+JQ para realizar peticiones HTTP y eliminar las
+notificaciones una vez hayan sido procesadas, 
+usando AJAX
+
+La función eliminar es ejecuta al instante se carga el DOM*/
+	
 botonEliminar();
 
 });
