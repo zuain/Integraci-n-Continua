@@ -1,5 +1,10 @@
 <?php
+/*
+Controlador usando para conectar a la base de datos
+implementando PDO en PHP. Con el constructor inicial
+y tres funciones para gestionar la base de datos.
 
+*/
     class ControllerFichaHome{
 
         private $pdo;
