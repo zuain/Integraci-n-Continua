@@ -1,5 +1,9 @@
 <?php
 
+/*
+Controlador para el inicio de sesión
+*/
+
 	class ControllerLogin{
 			private $pdo;
 
