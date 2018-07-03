@@ -1,27 +1,22 @@
 <?php
- 
   session_start();
   require_once 'includes/Autoloap.php';
-
+  //Declaración variables
   $cUser = new ControllerLogin();
   $user = new Usuario();
-
-
   $error;
-
+  //Verificar que la petición se realice mediante POST
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $user->__SET('nombre', filter_var($_POST['user'], FILTER_SANITIZE_STRING));
     $user->__SET('pass', filter_var($_POST['pass'], FILTER_SANITIZE_STRING));
-
+    //Validar sesión
     if($cUser->login($user)){
       $_SESSION['usuario'] = $user->__GET('nombre');
       header('Location: http://poli.catarco.com/panel.php');
     }else{
       $error = "Datos incorrectos";
     }
-
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +46,6 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4 col-md-offset-4">
-         
          <div class="content-login">
           <div class="logo">
                 <a href="http://poli.catarco.com"><img src="http://poli.catarco.com/assets/img/logo.png" alt="Poli"></a>
@@ -73,7 +67,6 @@
               <?php endif; ?>
           </form>
          </div>
-
         </div><!-- .col -->
       </div><!-- .row -->
     </div><!-- .container -->
