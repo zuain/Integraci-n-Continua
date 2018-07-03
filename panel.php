@@ -1,10 +1,9 @@
 <?php
 session_start();
-
+//Si no existe un login válido se direcciona a la página principal
 if(!isset($_SESSION['usuario'])){
     header('Location: http://poli.catarco.com/');
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +28,6 @@ if(!isset($_SESSION['usuario'])){
 
 <nav class="navbar navbar-default">
   <div class="container">
-  
       <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false">
@@ -63,7 +61,6 @@ if(!isset($_SESSION['usuario'])){
     </div><!-- / .navbar-collapse -->
   </div><!-- /.container -->
 </nav>
-
     
     <div class="container">
       <div class="row">
