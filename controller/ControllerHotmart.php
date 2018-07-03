@@ -1,5 +1,7 @@
 <?php
-
+/*
+Controlador para le receptor de notificaciones
+*/
 
 
     class ControllerHotmart{
